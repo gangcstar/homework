@@ -1,4 +1,4 @@
-package task_14;
+package task_15;
 
 public class Square extends Rectangle {
     private double width;
@@ -13,5 +13,10 @@ public class Square extends Rectangle {
             this.width = width;
             this.heigth = width;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle(" + width + ")";
     }
 }
