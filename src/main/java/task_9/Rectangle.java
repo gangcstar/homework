@@ -1,8 +1,8 @@
 package task_9;
 
 public class Rectangle{
-    private int width;
-    private int height;
+    private double width;
+    private double height;
 
     private static int counter = 0;
 
@@ -12,36 +12,36 @@ public class Rectangle{
         height = 1;
     }
 
-    public Rectangle(int width, int height) {
+    public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
     }
 
-    public int area(){
+    public double area(){
         return width*height;
     }
 
-    public int perimeter() {
+    public double perimeter() {
         return 2*(width+height);
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         if (height > 0) {
             this.height = height;
         }
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         if (width > 0) {
             this.width = width;
         }
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 }

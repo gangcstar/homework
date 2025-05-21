@@ -1,14 +1,14 @@
 package task_6;
 
 public class Rectangle {
-    int width;
-    int height;
+    double width;
+    double height;
 
-    public int area(){
+    public double area(){
         return width*height;
     }
 
-    public int perimeter() {
+    public double perimeter() {
         return 2*(width+height);
     }
 

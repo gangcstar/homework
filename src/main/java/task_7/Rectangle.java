@@ -1,8 +1,8 @@
 package task_7;
 
 public class Rectangle{
-        int width;
-        int height;
+        double width;
+        double height;
 
         static int counter = 0;
 
@@ -11,11 +11,11 @@ public class Rectangle{
 
         }
 
-        public int area(){
+        public double area(){
                 return width*height;
         }
 
-        public int perimeter() {
+        public double perimeter() {
                 return 2*(width+height);
         }
 

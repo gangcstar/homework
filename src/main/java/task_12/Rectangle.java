@@ -1,6 +1,6 @@
-package task_11;
+package task_12;
 
-public class Rectangle{
+public class Rectangle {
     private double width;
     private double height;
 
@@ -17,11 +17,13 @@ public class Rectangle{
         this.height = height;
     }
 
-    public double area(){
+    public double area()
+    {
         return width*height;
     }
 
-    public double perimeter() {
+    public double perimeter()
+    {
         return 2*(width+height);
     }
 
