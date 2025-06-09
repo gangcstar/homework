@@ -9,14 +9,12 @@ public class Square extends Rectangle {
 
     @Override
     public void setWidth(double width) {
-        if (width > 0) {
-            this.width = width;
-            this.heigth = width;
-        }
+        super.setWidth(width);
+        super.setHeight(width);
     }
 
     @Override
     public String toString() {
-        return "Rectangle(" + width + ")";
+        return "Square(" + width + ")";
     }
 }

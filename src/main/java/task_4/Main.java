@@ -6,12 +6,12 @@ public class Main {
     }
     public static String grade(int score){
         return switch (score) {
-            case 0 -> "A";
-            case 1 -> "B";
-            case 2 -> "C";
-            case 3 -> "D";
-            case 4 -> "E";
-            case 5 -> "F";
+            case 0 -> "F";
+            case 1 -> "E";
+            case 2 -> "D";
+            case 3 -> "C";
+            case 4 -> "B";
+            case 5 -> "A";
             default -> "Неизвестный score";
         };
     }

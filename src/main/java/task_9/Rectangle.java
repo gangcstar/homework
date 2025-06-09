@@ -1,8 +1,8 @@
 package task_9;
 
 public class Rectangle{
-    private double width;
-    private double height;
+    protected double width;
+    protected double height;
 
     private static int counter = 0;
 
@@ -15,6 +15,7 @@ public class Rectangle{
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+        counter++;
     }
 
     public double area(){

@@ -1,8 +1,10 @@
 package task_25;
 
 public class Rectangle implements Movable {
-    private double width;
-    private double height;
+    protected double width;
+    protected double height;
+    protected double x;
+    protected double y;
 
     private static int counter = 0;
 
@@ -10,11 +12,16 @@ public class Rectangle implements Movable {
         counter++;
         width = 1;
         height = 1;
+        x = 1;
+        y = 1;
     }
 
-    public Rectangle(double width, double height) {
+    public Rectangle(double width, double height, double x, double y) {
         this.width = width;
         this.height = height;
+        this.x = x;
+        this.y = y;
+        counter++;
     }
 
     public double area()
@@ -47,8 +54,25 @@ public class Rectangle implements Movable {
         return width;
     }
 
-    public void move(int dx, int dy) {
+    public void setX(double x) {
+        this.x = x;
+    }
 
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void move(int dx, int dy) {
+        this.x += dx;
+        this.y += dy;
     }
 
     @Override

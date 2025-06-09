@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println(getFactorial(5));
-        System.out.println(getSum(6));
+        System.out.println(getSum(999));
     }
 
     public static long getFactorial(int n) {
@@ -16,6 +16,11 @@ public class Main {
     }
 
     public static long getSum(int n) {
-return 0;
+        int sum = 0;
+        while(n != 0){
+            sum += (n % 10);
+            n/=10;
+        }
+return sum;
     }
 }

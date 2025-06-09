@@ -3,8 +3,8 @@ package task_26;
 import task_25.Movable;
 
 public class Rectangle extends Figure  {
-    private double width;
-    private double height;
+    protected double width;
+    protected double height;
 
     private static int counter = 0;
 
@@ -17,6 +17,7 @@ public class Rectangle extends Figure  {
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+
     }
 
     public double area()

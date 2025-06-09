@@ -15,6 +15,7 @@ public class Rectangle{
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+        counter++;
     }
 
     public double area(){

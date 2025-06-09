@@ -7,5 +7,13 @@ public enum Day {
     THURSDAY,
     FRIDAY,
     SATURDAY,
-    SUNDAY
+    SUNDAY;
+
+    static void printIsWeekend(Day day) {
+        if (day == Day.SATURDAY || day == Day.SUNDAY) {
+            System.out.println(day + " is Weekend!");
+        } else  {
+            System.out.println(day + " is not Weekend!");
+        }
+    }
 }

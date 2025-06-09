@@ -8,14 +8,6 @@ public class Main {
                 System.out.println(days[i]);
             }
         System.out.println();
-        isWeekend(Day.SATURDAY);
+        Day.printIsWeekend(Day.SATURDAY);
         }
-
-    public static void isWeekend(Day day) {
-        if (day == Day.SATURDAY || day == Day.SUNDAY) {
-            System.out.println(day + " is Weekend!");
-        } else {
-            System.out.println(day + " is not Weekend!");
-        }
-    }
 }

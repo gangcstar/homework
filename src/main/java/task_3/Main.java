@@ -5,12 +5,12 @@ public class Main {
         double tempMin = 0;
         double tempMax = 100;
 
-        System.out.println(tempMin + " °C = " + translation.get_K(tempMin) + " K");  // конвертация в градусы Кельвина
-        System.out.println(tempMax + " °C = " + translation.get_K(tempMax) + " K");
+        System.out.println(tempMin + " °C = " + Conversion.convertKelvin(tempMin) + " K");  // конвертация в градусы Кельвина
+        System.out.println(tempMax + " °C = " + Conversion.convertFahrenheit(tempMax) + " K");
 
         System.out.println();
 
-        System.out.println(tempMin + " °C = " + translation.get_F(tempMin) + " °F"); // конвертация в градусы Фаренгейта
-        System.out.println(tempMax + " °C = " + translation.get_F(tempMax) + " °F");
+        System.out.println(tempMin + " °C = " + Conversion.convertFahrenheit(tempMin) + " °F"); // конвертация в градусы Фаренгейта
+        System.out.println(tempMax + " °C = " + Conversion.convertFahrenheit(tempMax) + " °F");
     }
 }
