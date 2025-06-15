@@ -17,7 +17,7 @@ public class Rectangle extends Figure  {
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
-
+        counter++;
     }
 
     public double area()
