@@ -1,6 +1,9 @@
 package task1_1;
 
 public class Divide {
+    public static void main(String[] args) {
+        System.out.println(divide());
+    }
     public static int divide() {
         try {
             int result = safeDivizion(11, 0);
